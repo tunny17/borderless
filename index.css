@@ -1,0 +1,99 @@
+body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*                      navbar                       */
+
+ul {
+    cursor: pointer;
+    display: flex;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 1;
+    left: 44%;
+}
+
+li {
+    text-decoration: none;
+    font-size: 10px;
+    display: flex;
+    margin-right: 30px;
+}
+
+h4  {
+    font-weight: normal;
+    margin-top: 0px;
+    font-variant: small-caps;
+}
+
+a   {
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+}
+
+/*                      header                       */
+
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/pexels-nothing-ahead-7531986.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 1000ms;
+}
+
+.showcase:hover .content {
+    filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.showcase:hover::after {
+    filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 49%;
+    margin-left: -145px;
+    width: 290px;
+    height: 250px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .logo {
+    height: 180px;
+    width: 180px;
+    margin-top: 85px;
+}
+
+.content .title {
+    margin-top: 0px;
+}
+
+h3 {
+    text-align: center;
+    position: sticky;
+    margin-bottom: 50px;
+}
+
+/*                      hover effect                     */
+
+ul li:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}

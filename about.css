@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/*                   navbar                      */
+
+ul {
+    cursor: pointer;
+    display: flex;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+}
+
+li {
+    text-decoration: none;
+    font-size: 11px;
+    display: flex;
+    margin-right: 45px;
+}
+
+a   {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+/*                      text                      */
+
+h3 {
+    color: black;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+    z-index: 1;
+    margin-right: 60px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/*                      video                        */
+
+video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*                       footer                        */
+
+footer {
+    z-index: 1;
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+    font-variant: small-caps;
+}
+
+/*                     pseudo features                      */
+
+a:hover {
+    transform: scale(1.2);
+}
+
+h3::first-letter {
+    font-size: x-large;
+    margin-left: 25px;
+}
